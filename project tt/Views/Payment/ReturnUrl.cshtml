@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "ReturnUrl";
+}
+
+@if (ViewBag.Message == "00")
+{
+    <div style="margin: auto; text-align: center; margin-bottom: 50px">
+        <h2>Thanh toán thành công!</h2>
+        <h3>Cảm ơn sự quyên góp của quý vị! Bấm <a href="/" style="color:#ffd800">vào đây</a> để quay lại!</h3>
+    </div>
+}
+else
+{
+    <div style="margin: auto; text-align: center;margin-bottom: 50px">
+        <h2>Thanh toán thất bại!</h2>
+        <h3>Xin vui lòng kiểm tra lại! Bấm <a href="/" style="color:#ffd800">vào đây</a> để quay lại!</h3>
+    </div>
+}
